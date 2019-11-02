@@ -16,7 +16,7 @@ class UserPatch extends ReLogoPatch{
 	def iteration = 0
 	def goPatch() {
 		iteration = iteration +1;
-		if(iteration%10 ==0) {
+		if(iteration%20 ==0) {
 			
 			if(pcolor == red()) {
 				pcolor = green();

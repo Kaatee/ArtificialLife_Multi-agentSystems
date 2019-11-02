@@ -4,8 +4,9 @@ import repast.simphony.relogo.factories.AbstractReLogoGlobalsAndPanelFactory
 
 public class UserGlobalsAndPanelFactory extends AbstractReLogoGlobalsAndPanelFactory{
 	public void addGlobalsAndPanelComponents(){
-		addSliderWL("prob", "Probability",0, 0.01, 1, 0.4)
-		addButtonWL("go", "Go once")
+		addSliderWL("maxCarNumber", "Maksymalna liczba samochodow: ", 1, 1, 100, 50)
+		
+		
 		
 		/**
 		 * Place custom panels and globals below, for example:

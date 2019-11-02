@@ -258,24 +258,24 @@ public class ReLogoObserver extends BaseObserver{
 	}
 
 	/**
-	 * Returns the value of the global variable prob.
+	 * Returns the value of the global variable maxCarNumber.
 	 *
-	 * @return the value of the global variable prob
+	 * @return the value of the global variable maxCarNumber
 	 */
-	@ReLogoBuilderGeneratedFor("global: prob")
-	public Object getProb(){
-		return repast.simphony.relogo.ReLogoModel.getInstance().getModelParam("prob");
+	@ReLogoBuilderGeneratedFor("global: maxCarNumber")
+	public Object getMaxCarNumber(){
+		return repast.simphony.relogo.ReLogoModel.getInstance().getModelParam("maxCarNumber");
 	}
 
 	/**
-	 * Sets the value of the global variable prob.
+	 * Sets the value of the global variable maxCarNumber.
 	 *
 	 * @param value
 	 *            a value
 	 */
-	@ReLogoBuilderGeneratedFor("global: prob")
-	public void setProb(Object value){
-		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("prob",value);
+	@ReLogoBuilderGeneratedFor("global: maxCarNumber")
+	public void setMaxCarNumber(Object value){
+		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("maxCarNumber",value);
 	}
 
 

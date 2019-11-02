@@ -14,7 +14,6 @@ import trafficsymulator.ReLogoObserver;
 class UserObserver extends ReLogoObserver{
 
 	int roadLength = 7;
-	int maxCarNumber = 12;
 	
 	@Setup
 	def setup(){
@@ -27,8 +26,7 @@ class UserObserver extends ReLogoObserver{
 				if(pcolor != green() && pcolor != red()) {
 				pcolor = white();
 				
-				Float rand = Math.random();
-				if(rand < 0.1 && currentCarNumber < maxCarNumber ) {
+				if(currentCarNumber < maxCarNumber ) {
 					def x = pxcor
 					def y = pycor
 					currentCarNumber = currentCarNumber + 1;
