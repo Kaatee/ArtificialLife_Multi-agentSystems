@@ -12,8 +12,6 @@ import repast.simphony.relogo.schedule.Setup;
 import trafficsymulator.ReLogoObserver;
 
 class UserObserver extends ReLogoObserver{
-
-	int roadLength = 7;
 	
 	@Setup
 	def setup(){
@@ -31,6 +29,9 @@ class UserObserver extends ReLogoObserver{
 					def y = pycor
 					currentCarNumber = currentCarNumber + 1;
 					createUserTurtles(1){
+						if(delay == true) {
+							setCarDelay(Math.random()*10); //max Car delay = 10
+						}
 						setColor(black());
 						setxy(x, y)
 						}

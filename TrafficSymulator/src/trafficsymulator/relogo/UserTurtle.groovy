@@ -11,6 +11,7 @@ import repast.simphony.relogo.schedule.Setup;
 import trafficsymulator.ReLogoTurtle;
 
 class UserTurtle extends ReLogoTurtle{
+	def carDelay;
 	
 	def step() {
 		if( (self().patchAt(-1,0).pcolor==green() || self().patchAt(-1,0).pcolor==red() || self().patchAt(-1,0).pcolor==white()) &&
