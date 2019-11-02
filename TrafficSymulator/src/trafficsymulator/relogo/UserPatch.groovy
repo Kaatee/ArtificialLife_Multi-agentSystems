@@ -13,13 +13,17 @@ import repast.simphony.relogo.schedule.Setup;
 import trafficsymulator.ReLogoPatch;
 
 class UserPatch extends ReLogoPatch{
+	def iteration = 0
 	def goPatch() {
-		
-		if(pcolor == red()) {
-			pcolor = green();
-		}
-		else if(pcolor == green()) {
-			pcolor = red();
+		iteration = iteration +1;
+		if(iteration%10 ==0) {
+			
+			if(pcolor == red()) {
+				pcolor = green();
+			}
+			else if(pcolor == green()) {
+				pcolor = red();
+			}
 		}
 		
 	}

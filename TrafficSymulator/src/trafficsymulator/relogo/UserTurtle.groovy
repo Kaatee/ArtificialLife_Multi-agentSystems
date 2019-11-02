@@ -21,16 +21,30 @@ class UserTurtle extends ReLogoTurtle{
 			def x = Math.random()
 			if(x < 0.5  && self().patchAt(0,0).pcolor != red() ) {
 				setHeading(90);// w prawo
-				fd(1);
+				if(self().patchAt(1,0).turtlesHere().isEmpty()) {
+					fd(1);
+				}
 			}
 			if(x >= 0.5  && self().patchAt(0,0).pcolor != red() ) {
 				setHeading(0);
-				fd(1);
+				if(self().patchAt(0,1).turtlesHere().isEmpty()) {
+					fd(1);
+				}
 			}
 		}
 		else {
-			if(self().patchAt(0,0).pcolor != red() ) { //i jeszcze sprawdzic czy nie stoi juz inne autko
-				fd(1);
+			if(self().patchAt(0,0).pcolor != red()  ) { //i jeszcze sprawdzic czy nie stoi juz inne autko
+				if(self().getHeading() == 90) {
+					if(self().patchAt(1,0).turtlesHere().isEmpty()) {
+						fd(1);
+					}
+				}
+				else {
+					if(self().patchAt(0,1).turtlesHere().isEmpty()) {
+						fd(1);
+					}
+				}
+				//fd(1);
 		}
 		}
 	}

@@ -6,6 +6,7 @@ public class UserGlobalsAndPanelFactory extends AbstractReLogoGlobalsAndPanelFac
 	public void addGlobalsAndPanelComponents(){
 		addSliderWL("prob", "Probability",0, 0.01, 1, 0.4)
 		addButtonWL("go", "Go once")
+		
 		/**
 		 * Place custom panels and globals below, for example:
 		 * 

@@ -215,6 +215,27 @@ public class ReLogoTurtle extends BaseTurtle{
 	}
 
 	/**
+	 * Returns the value from the getIteration() method of the underlying patch.
+	 * 
+	 * @return getIteration() of type java.lang.Object
+	 */
+	@ReLogoBuilderGeneratedFor("trafficsymulator.relogo.UserPatch")
+	public java.lang.Object getIteration(){
+		trafficsymulator.relogo.UserPatch p = (trafficsymulator.relogo.UserPatch)patchHere();
+		return p.getIteration();
+	}
+
+	/**
+	 * Calls the setIteration(java.lang.Object) method of the underlying patch.
+	 * 
+	 */
+	@ReLogoBuilderGeneratedFor("trafficsymulator.relogo.UserPatch")
+	public void setIteration(java.lang.Object value){
+		trafficsymulator.relogo.UserPatch p = (trafficsymulator.relogo.UserPatch)patchHere();
+		p.setIteration(value);
+	}
+
+	/**
 	 * Makes a directed userLink from a turtle to the caller then executes a set of
 	 * commands on the created userLink.
 	 * 
