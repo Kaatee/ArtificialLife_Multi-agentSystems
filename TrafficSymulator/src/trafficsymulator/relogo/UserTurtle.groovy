@@ -12,8 +12,19 @@ import trafficsymulator.ReLogoTurtle;
 
 class UserTurtle extends ReLogoTurtle{
 	def carDelay;
+	def stopTime = 0;
+	def isStopped = true;
+	/*
+	 * 	"maxCarNumber", "Maksymalna liczba samochodow: ", 1, 1, 200, 50)	
+		"roadLength", "D³ugoœæ drogi miêdzy dwoma skrzy¿owaniami: ", 1, 1, 20, 7)
+		"maxCarSpeed", "Maksymalna prêdkoœæ pojazdu: ", 0.01, 0.01, 1, 1)
+		"maxCarAcceleration", "Maksumalne pzyœpieszenie pojazdu: ", 0.01, 0.01, 1, 1)
+		"trafficLightsChangeDuration", "Czas zmiany œwiate³: ", 1, 1, 100, 10)
+		"delay", "Czy samochody maj¹ opó¿nienie ", [false, true], 0)
+	 */
 	
 	def step() {
+		isStopped = true
 		if( (self().patchAt(-1,0).pcolor==green() || self().patchAt(-1,0).pcolor==red() || self().patchAt(-1,0).pcolor==white()) &&
 			(self().patchAt(0, 1).pcolor==green() || self().patchAt(0, 1).pcolor==red() || self().patchAt(0, 1).pcolor==white()) &&
 			(self().patchAt(1, 0).pcolor==green() || self().patchAt(1, 0).pcolor==red() || self().patchAt(1, 0).pcolor==white()) &&
@@ -24,29 +35,35 @@ class UserTurtle extends ReLogoTurtle{
 				setHeading(90);// w prawo
 				if(self().patchAt(1,0).turtlesHere().isEmpty()) {
 					fd(1);
+					isStopped = false;
 				}
 			}
 			if(x >= 0.5  && self().patchAt(0,0).pcolor != red() ) {
 				setHeading(0);
 				if(self().patchAt(0,1).turtlesHere().isEmpty()) {
 					fd(1);
+					isStopped = false;
 				}
 			}
 		}
 		else {
-			if(self().patchAt(0,0).pcolor != red()  ) { //i jeszcze sprawdzic czy nie stoi juz inne autko
+			if(self().patchAt(0,0).pcolor != red()  ) {
 				if(self().getHeading() == 90) {
 					if(self().patchAt(1,0).turtlesHere().isEmpty()) {
 						fd(1);
+						isStopped = false;
 					}
 				}
 				else {
 					if(self().patchAt(0,1).turtlesHere().isEmpty()) {
 						fd(1);
+						isStopped = false;
 					}
 				}
-				//fd(1);
 		}
+		}
+		if(isStopped) {
+			stopTime = stopTime + 1;
 		}
 	}
 }

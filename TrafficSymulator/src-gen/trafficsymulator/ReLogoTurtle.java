@@ -592,27 +592,6 @@ public class ReLogoTurtle extends BaseTurtle{
 	}
 
 	/**
-	 * Returns the value of the global variable symetricWorld.
-	 *
-	 * @return the value of the global variable symetricWorld
-	 */
-	@ReLogoBuilderGeneratedFor("global: symetricWorld")
-	public Object getSymetricWorld(){
-		return repast.simphony.relogo.ReLogoModel.getInstance().getModelParam("symetricWorld");
-	}
-
-	/**
-	 * Sets the value of the global variable symetricWorld.
-	 *
-	 * @param value
-	 *            a value
-	 */
-	@ReLogoBuilderGeneratedFor("global: symetricWorld")
-	public void setSymetricWorld(Object value){
-		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("symetricWorld",value);
-	}
-
-	/**
 	 * Returns the value of the global variable roadLength.
 	 *
 	 * @return the value of the global variable roadLength
@@ -652,6 +631,27 @@ public class ReLogoTurtle extends BaseTurtle{
 	@ReLogoBuilderGeneratedFor("global: maxCarSpeed")
 	public void setMaxCarSpeed(Object value){
 		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("maxCarSpeed",value);
+	}
+
+	/**
+	 * Returns the value of the global variable maxCarAcceleration.
+	 *
+	 * @return the value of the global variable maxCarAcceleration
+	 */
+	@ReLogoBuilderGeneratedFor("global: maxCarAcceleration")
+	public Object getMaxCarAcceleration(){
+		return repast.simphony.relogo.ReLogoModel.getInstance().getModelParam("maxCarAcceleration");
+	}
+
+	/**
+	 * Sets the value of the global variable maxCarAcceleration.
+	 *
+	 * @param value
+	 *            a value
+	 */
+	@ReLogoBuilderGeneratedFor("global: maxCarAcceleration")
+	public void setMaxCarAcceleration(Object value){
+		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("maxCarAcceleration",value);
 	}
 
 	/**

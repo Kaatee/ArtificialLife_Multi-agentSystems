@@ -60,15 +60,31 @@ class UserObserver extends ReLogoObserver{
 		
 	}
 	
-	
+	def sumOfStopTime = 0;
+	def amountOfStoppeCars = 0;
 	@Go
 	def go(){
+		sumOfStopTime = 0; 
+		amountOfStoppeCars = 0; //w danej chwili
+		
 		ask(patches()){
 			goPatch();
 		}
 		ask(turtles()){
 			step();
+			sumOfStopTime = sumOfStopTime + stopTime; //stopTime - suma czasu jaki dany samochow w sumie stał
+			if(isStopped) {
+				amountOfStoppeCars ++;
+			}
 		}
+	}
+	
+	def calculateAverageWaitTime() {
+		return sumOfStopTime / maxCarNumber;
+	}
+	
+	def calculateAmountOfStoppedCars() { //liczba zatrzymanych w danej chwili pojazdow
+		return amountOfStoppeCars;
 	}
 	
 	
