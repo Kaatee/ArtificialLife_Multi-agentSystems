@@ -16,31 +16,41 @@ class UserObserver extends ReLogoObserver{
 	@Setup
 	def setup(){
 		clearAll()
-		setDefaultShape(UserTurtle , "car")
+		setDefaultShape(UserTurtle , "arrow")
 		def currentCarNumber = 0;
 		
 		ask(patches()){
-			if(pxcor % roadLength == 0 || pycor % roadLength == 0  ) {
+			if(pxcor % roadLength == 0 || pycor % roadLength == 0 ) {//rysuje drogi
 				if(pcolor != green() && pcolor != red()) {
 				pcolor = white();
 				
-				if(currentCarNumber < maxCarNumber ) {
+				if(currentCarNumber <= maxCarNumber ) {
 					def x = pxcor
 					def y = pycor
 					currentCarNumber = currentCarNumber + 1;
 					createUserTurtles(1){
-						if(delay == true) {
-							setCarDelay(Math.random()*10); //max Car delay = 10
-						}
 						setColor(black());
 						setxy(x, y)
 						}
 						
 				}
 				
-				if(pxcor % roadLength == 0 && pycor % roadLength == 0 ) {		
-					self().patchAt(-1, 0).setPcolor(green());
-					self().patchAt(0, -1).setPcolor(red());
+				if(pxcor % roadLength == 0 && pycor % roadLength == 0 ) {	//jestem na skrzyzowaniu	
+					if(false) { //TODO isGreenLine Vvriable
+						self().patchAt(-1, 0).setPcolor(green());
+						self().patchAt(0, -1).setPcolor(red());
+					}
+					else {
+						def rand = Math.random();
+						if(rand < 0.5) {
+							self().patchAt(-1, 0).setPcolor(green());
+							self().patchAt(0, -1).setPcolor(red());
+						}
+						else{
+							self().patchAt(-1, 0).setPcolor(red());
+							self().patchAt(0, -1).setPcolor(green());
+						}
+					}
 				}
 			}}
 			else {
@@ -50,7 +60,7 @@ class UserObserver extends ReLogoObserver{
 		
 		ask(turtles()){
 			if(self().patchAt(1,0).pcolor != gray()) {
-					setHeading(90);
+					setHeading(90); //right
 				}
 				else {
 					setHeading(0);

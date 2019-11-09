@@ -11,11 +11,11 @@ import repast.simphony.relogo.schedule.Setup;
 import trafficsymulator.ReLogoTurtle;
 
 class UserTurtle extends ReLogoTurtle{
-	def carDelay;
 	def stopTime = 0;
 	def isStopped;
 	def isCrossingCrossing;
 	def allRoad = 0;
+	def isRecentlyStoppedOnCrossing = false;
 	
 	def vCurrent = 0;
 	def a = 1.2;
@@ -27,7 +27,6 @@ class UserTurtle extends ReLogoTurtle{
 		"maxCarSpeed", "Maksymalna prêdkoœæ pojazdu: ", 0.01, 0.01, 1, 1)
 		"maxCarAcceleration", "Maksumalne pzyœpieszenie pojazdu: ", 0.01, 0.01, 1, 1)
 		"trafficLightsChangeDuration", "Czas zmiany œwiate³: ", 1, 1, 100, 10)
-		"delay", "Czy samochody maj¹ opó¿nienie ", [false, true], 0)
 	 */
 	
 	def forward() {
@@ -48,26 +47,28 @@ class UserTurtle extends ReLogoTurtle{
 	def step() {
 		isStopped = true
 		isCrossingCrossing = false
-		if( (self().patchAt(-1,0).pcolor==green() || self().patchAt(-1,0).pcolor==red() || self().patchAt(-1,0).pcolor==white()) &&
-			(self().patchAt(0, 1).pcolor==green() || self().patchAt(0, 1).pcolor==red() || self().patchAt(0, 1).pcolor==white()) &&
-			(self().patchAt(1, 0).pcolor==green() || self().patchAt(1, 0).pcolor==red() || self().patchAt(1, 0).pcolor==white()) &&
-			(self().patchAt(0,-1).pcolor==green() || self().patchAt(0,-1).pcolor==red()|| self().patchAt(0,-1).pcolor==white())) { //czyli jesli jest na skrzyzowaniu
-			//pewnie da sie tego ida jakos inaczej zrobic
+		if( (self().patchAt(-1,0).pcolor!=gray()) &&
+			(self().patchAt(0, 1).pcolor!=gray()) &&
+			(self().patchAt(1, 0).pcolor!=gray()) &&
+			(self().patchAt(0,-1).pcolor!=gray()) &&
+			self().getPycor() == 0 && self().getPxcor() == 0) { //czyli jesli jest na skrzyzowaniu i jest na srodku skrzyzowania
 			isCrossingCrossing = true
-			def x = Math.random()
+			def x = Math.random() //zmienna wskazujaca czy bedzie skrecal
 			if(x < 0.5  && self().patchAt(0,0).pcolor != red() ) {
-				
 				if(self().patchAt(1,0).turtlesHere().isEmpty()) {
 					setHeading(90);// w prawo
-					forward();
+					if(getHeading()==90) {
+						forward();
+					}
 					isStopped = false;
 				}
 			}
 			if(x >= 0.5  && self().patchAt(0,0).pcolor != red() ) {
-				
 				if(self().patchAt(0,1).turtlesHere().isEmpty()) {
-					setHeading(0);
-					forward();
+					setHeading(0); //w lewo
+					if(getHeading()==0) {
+						forward();
+					}
 					isStopped = false;
 				}
 			}

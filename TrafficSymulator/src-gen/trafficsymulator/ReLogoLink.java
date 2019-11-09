@@ -288,26 +288,5 @@ public class ReLogoLink<T> extends BaseLink<T>	{
 		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("trafficLightsChangeDuration",value);
 	}
 
-	/**
-	 * Returns the value of the global variable delay.
-	 *
-	 * @return the value of the global variable delay
-	 */
-	@ReLogoBuilderGeneratedFor("global: delay")
-	public Object getDelay(){
-		return repast.simphony.relogo.ReLogoModel.getInstance().getModelParam("delay");
-	}
-
-	/**
-	 * Sets the value of the global variable delay.
-	 *
-	 * @param value
-	 *            a value
-	 */
-	@ReLogoBuilderGeneratedFor("global: delay")
-	public void setDelay(Object value){
-		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("delay",value);
-	}
-
 
 }

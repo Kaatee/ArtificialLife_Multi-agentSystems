@@ -9,7 +9,8 @@ public class UserGlobalsAndPanelFactory extends AbstractReLogoGlobalsAndPanelFac
 		addSliderWL("maxCarSpeed", "Maksymalna predkosc pojazdu: ", 0.01, 0.01, 1, 1)
 		addSliderWL("maxCarAcceleration", "Maksymalne pzyspieszenie pojazdu: ", 0.01, 0.01, 1, 1)
 		addSliderWL("trafficLightsChangeDuration", "Czas zmiany swiatel: ", 1, 1, 100, 10)
-		addChooserWL("delay", "Czy samochody maj¹ opoznienie ", [false, true], 0)
+		//add
+		//isGreenLine
 		
 		
 		//addMonitorWL(String methodName, String elementLabel, double interval)
