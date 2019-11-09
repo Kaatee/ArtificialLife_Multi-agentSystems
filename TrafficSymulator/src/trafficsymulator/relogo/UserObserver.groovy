@@ -62,6 +62,8 @@ class UserObserver extends ReLogoObserver{
 	
 	def sumOfStopTime = 0;
 	def amountOfStoppeCars = 0;
+	def amountOfCarsCrossingCrossing = 0;
+	
 	@Go
 	def go(){
 		sumOfStopTime = 0; 
@@ -74,7 +76,10 @@ class UserObserver extends ReLogoObserver{
 			step();
 			sumOfStopTime = sumOfStopTime + stopTime; //stopTime - suma czasu jaki dany samochow w sumie stał
 			if(isStopped) {
-				amountOfStoppeCars ++;
+				amountOfStoppeCars +=1;
+			}
+			if(isCrossingCrossing) {
+				amountOfCarsCrossingCrossing = amountOfCarsCrossingCrossing + 1; //suma w calym dzialaniu programu
 			}
 		}
 	}
@@ -85,6 +90,11 @@ class UserObserver extends ReLogoObserver{
 	
 	def calculateAmountOfStoppedCars() { //liczba zatrzymanych w danej chwili pojazdow
 		return amountOfStoppeCars;
+	}
+	
+	def averageSumOfCarsThatCrossCrossing() {
+		//srednia liczba samochodow, ktore przejechaly skrzyzowania
+		return amountOfCarsCrossingCrossing / tick();
 	}
 	
 	

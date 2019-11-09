@@ -17,6 +17,7 @@ public class UserGlobalsAndPanelFactory extends AbstractReLogoGlobalsAndPanelFac
 		addMonitorWL("calculateAverageWaitTime", "Sredni czas oczekiwania na swiatlach", 1.0);
 		addMonitorWL("calculateAmountOfStoppedCars", "Liczba zatrzymanych pojazdow", 1.0);
 		//addMonitorWL("calculateAverageCarsSpeed", "Srednia predkosc pojazdow", 0.1); 
+		//addMonitorWL("averageSumOfCarsThatCrossCrossing", "Srednia liczba samochodow, ktore przejechaly skrzyzowania", 0.1);
 		
 		
 		
