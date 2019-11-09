@@ -44,37 +44,11 @@ class UserTurtle extends ReLogoTurtle{
 		sPrevious = sCurrent;
 	}
 	
+	
 	def step() {
 		isStopped = true
 		isCrossingCrossing = false
-		if( (self().patchAt(-1,0).pcolor!=gray()) &&
-			(self().patchAt(0, 1).pcolor!=gray()) &&
-			(self().patchAt(1, 0).pcolor!=gray()) &&
-			(self().patchAt(0,-1).pcolor!=gray()) &&
-			self().getPycor() == 0 && self().getPxcor() == 0) { //czyli jesli jest na skrzyzowaniu i jest na srodku skrzyzowania
-			isCrossingCrossing = true
-			def x = Math.random() //zmienna wskazujaca czy bedzie skrecal
-			if(x < 0.5  && self().patchAt(0,0).pcolor != red() ) {
-				if(self().patchAt(1,0).turtlesHere().isEmpty()) {
-					setHeading(90);// w prawo
-					if(getHeading()==90) {
-						forward();
-					}
-					isStopped = false;
-				}
-			}
-			if(x >= 0.5  && self().patchAt(0,0).pcolor != red() ) {
-				if(self().patchAt(0,1).turtlesHere().isEmpty()) {
-					setHeading(0); //w lewo
-					if(getHeading()==0) {
-						forward();
-					}
-					isStopped = false;
-				}
-			}
-		}
-		else {
-			if(self().patchAt(0,0).pcolor != red()  ) {
+		if(self().patchAt(0,0).pcolor != red()  ) {
 				if(self().getHeading() == 90) {
 					if(self().patchAt(1,0).turtlesHere().isEmpty()) {
 						forward();
@@ -88,9 +62,12 @@ class UserTurtle extends ReLogoTurtle{
 					}
 				}
 		}
-		}
+		
 		if(isStopped) {
 			stopTime = stopTime + 1;
+			vCurrent = 0;
+			sPrevious = 0;
+			tSinceStart = 0;
 		}
 	}
 }

@@ -24,7 +24,7 @@ class UserObserver extends ReLogoObserver{
 				if(pcolor != green() && pcolor != red()) {
 				pcolor = white();
 				
-				if(currentCarNumber <= maxCarNumber ) {
+				if(currentCarNumber < maxCarNumber ) {
 					def x = pxcor
 					def y = pycor
 					currentCarNumber = currentCarNumber + 1;
