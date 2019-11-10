@@ -215,6 +215,48 @@ public class ReLogoTurtle extends BaseTurtle{
 	}
 
 	/**
+	 * Returns the value from the getP() method of the underlying patch.
+	 * 
+	 * @return getP() of type repast.simphony.parameter.Parameters
+	 */
+	@ReLogoBuilderGeneratedFor("trafficsymulator.relogo.UserPatch")
+	public repast.simphony.parameter.Parameters getP(){
+		trafficsymulator.relogo.UserPatch p = (trafficsymulator.relogo.UserPatch)patchHere();
+		return p.getP();
+	}
+
+	/**
+	 * Calls the setP(repast.simphony.parameter.Parameters) method of the underlying patch.
+	 * 
+	 */
+	@ReLogoBuilderGeneratedFor("trafficsymulator.relogo.UserPatch")
+	public void setP(repast.simphony.parameter.Parameters value){
+		trafficsymulator.relogo.UserPatch p = (trafficsymulator.relogo.UserPatch)patchHere();
+		p.setP(value);
+	}
+
+	/**
+	 * Returns the value from the getTrafficLightsChangeDuration() method of the underlying patch.
+	 * 
+	 * @return getTrafficLightsChangeDuration() of type int
+	 */
+	@ReLogoBuilderGeneratedFor("trafficsymulator.relogo.UserPatch")
+	public int getTrafficLightsChangeDuration(){
+		trafficsymulator.relogo.UserPatch p = (trafficsymulator.relogo.UserPatch)patchHere();
+		return p.getTrafficLightsChangeDuration();
+	}
+
+	/**
+	 * Calls the setTrafficLightsChangeDuration(int) method of the underlying patch.
+	 * 
+	 */
+	@ReLogoBuilderGeneratedFor("trafficsymulator.relogo.UserPatch")
+	public void setTrafficLightsChangeDuration(int value){
+		trafficsymulator.relogo.UserPatch p = (trafficsymulator.relogo.UserPatch)patchHere();
+		p.setTrafficLightsChangeDuration(value);
+	}
+
+	/**
 	 * Returns the value from the getIteration() method of the underlying patch.
 	 * 
 	 * @return getIteration() of type java.lang.Object
@@ -568,111 +610,6 @@ public class ReLogoTurtle extends BaseTurtle{
 	@ReLogoBuilderGeneratedFor("trafficsymulator.relogo.UserLink")
 	public trafficsymulator.relogo.UserLink userLink(Turtle oneEnd, Turtle otherEnd) {
 		return userLink(oneEnd.getWho(), otherEnd.getWho());
-	}
-
-	/**
-	 * Returns the value of the global variable maxCarNumber.
-	 *
-	 * @return the value of the global variable maxCarNumber
-	 */
-	@ReLogoBuilderGeneratedFor("global: maxCarNumber")
-	public Object getMaxCarNumber(){
-		return repast.simphony.relogo.ReLogoModel.getInstance().getModelParam("maxCarNumber");
-	}
-
-	/**
-	 * Sets the value of the global variable maxCarNumber.
-	 *
-	 * @param value
-	 *            a value
-	 */
-	@ReLogoBuilderGeneratedFor("global: maxCarNumber")
-	public void setMaxCarNumber(Object value){
-		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("maxCarNumber",value);
-	}
-
-	/**
-	 * Returns the value of the global variable roadLength.
-	 *
-	 * @return the value of the global variable roadLength
-	 */
-	@ReLogoBuilderGeneratedFor("global: roadLength")
-	public Object getRoadLength(){
-		return repast.simphony.relogo.ReLogoModel.getInstance().getModelParam("roadLength");
-	}
-
-	/**
-	 * Sets the value of the global variable roadLength.
-	 *
-	 * @param value
-	 *            a value
-	 */
-	@ReLogoBuilderGeneratedFor("global: roadLength")
-	public void setRoadLength(Object value){
-		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("roadLength",value);
-	}
-
-	/**
-	 * Returns the value of the global variable maxCarSpeed.
-	 *
-	 * @return the value of the global variable maxCarSpeed
-	 */
-	@ReLogoBuilderGeneratedFor("global: maxCarSpeed")
-	public Object getMaxCarSpeed(){
-		return repast.simphony.relogo.ReLogoModel.getInstance().getModelParam("maxCarSpeed");
-	}
-
-	/**
-	 * Sets the value of the global variable maxCarSpeed.
-	 *
-	 * @param value
-	 *            a value
-	 */
-	@ReLogoBuilderGeneratedFor("global: maxCarSpeed")
-	public void setMaxCarSpeed(Object value){
-		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("maxCarSpeed",value);
-	}
-
-	/**
-	 * Returns the value of the global variable maxCarAcceleration.
-	 *
-	 * @return the value of the global variable maxCarAcceleration
-	 */
-	@ReLogoBuilderGeneratedFor("global: maxCarAcceleration")
-	public Object getMaxCarAcceleration(){
-		return repast.simphony.relogo.ReLogoModel.getInstance().getModelParam("maxCarAcceleration");
-	}
-
-	/**
-	 * Sets the value of the global variable maxCarAcceleration.
-	 *
-	 * @param value
-	 *            a value
-	 */
-	@ReLogoBuilderGeneratedFor("global: maxCarAcceleration")
-	public void setMaxCarAcceleration(Object value){
-		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("maxCarAcceleration",value);
-	}
-
-	/**
-	 * Returns the value of the global variable trafficLightsChangeDuration.
-	 *
-	 * @return the value of the global variable trafficLightsChangeDuration
-	 */
-	@ReLogoBuilderGeneratedFor("global: trafficLightsChangeDuration")
-	public Object getTrafficLightsChangeDuration(){
-		return repast.simphony.relogo.ReLogoModel.getInstance().getModelParam("trafficLightsChangeDuration");
-	}
-
-	/**
-	 * Sets the value of the global variable trafficLightsChangeDuration.
-	 *
-	 * @param value
-	 *            a value
-	 */
-	@ReLogoBuilderGeneratedFor("global: trafficLightsChangeDuration")
-	public void setTrafficLightsChangeDuration(Object value){
-		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("trafficLightsChangeDuration",value);
 	}
 
 

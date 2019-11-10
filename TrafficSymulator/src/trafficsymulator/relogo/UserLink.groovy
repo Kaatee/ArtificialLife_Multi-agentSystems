@@ -13,5 +13,4 @@ import repast.simphony.relogo.schedule.Setup;
 import trafficsymulator.ReLogoLink;
 
 class UserLink extends ReLogoLink	{
-
 }
