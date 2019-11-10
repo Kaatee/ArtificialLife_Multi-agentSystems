@@ -45,7 +45,7 @@ class UserTurtle extends ReLogoTurtle{
 	}
 	
 	
-	def step() {
+	def stepWithLights() {
 		isStopped = true
 		isCrossingCrossing = false
 		if(self().patchAt(0,0).pcolor != red()  ) {
@@ -61,6 +61,33 @@ class UserTurtle extends ReLogoTurtle{
 						isStopped = false;
 					}
 				}
+		}
+		
+		if(isStopped) {
+			stopTime = stopTime + 1;
+			vCurrent = 0;
+			sPrevious = 0;
+			tSinceStart = 0;
+		}
+	}
+	
+	def stepWithRightHandPrinciple() { //te, które jad¹ w górê maj¹ pierwszeñstwo
+		isStopped = true;
+		isCrossingCrossing = false;
+		
+		if(self().getHeading() == 90) { //w prawo (muszê przepuœciæ tych co jad¹ w górê)
+			if(self().patchAt(1,0).turtlesHere().isEmpty() &&
+				self().patchAt(1,-1).turtlesHere().isEmpty() &&
+				self().patchAt(1,-2).turtlesHere().isEmpty()) {
+					forward();
+					isStopped = false;
+			}
+		}
+		else { //w górê (te maja pierwszenstwo)
+			if(self().patchAt(0,1).turtlesHere().isEmpty()) { //sprawdza tylko czy pole przed nim jest wolne
+				forward();
+				isStopped = false;
+			}
 		}
 		
 		if(isStopped) {

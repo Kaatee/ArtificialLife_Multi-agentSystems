@@ -13,10 +13,14 @@ import trafficsymulator.ReLogoObserver;
 
 class UserObserver extends ReLogoObserver{
 	
+	//TODO - wsadowe
+	def isTrafficLights = true;
+	def isGreenLine = false;
+	
 	@Setup
 	def setup(){
 		clearAll()
-		setDefaultShape(UserTurtle , "arrow")
+		setDefaultShape(UserTurtle , "car")
 		def currentCarNumber = 0;
 		
 		ask(patches()){
@@ -34,21 +38,22 @@ class UserObserver extends ReLogoObserver{
 						}
 						
 				}
-				
-				if(pxcor % roadLength == 0 && pycor % roadLength == 0 ) {	//jestem na skrzyzowaniu	
-					if(false) { //TODO isGreenLine Vvriable
-						self().patchAt(-1, 0).setPcolor(green());
-						self().patchAt(0, -1).setPcolor(red());
-					}
-					else {
-						def rand = Math.random();
-						if(rand < 0.5) {
+				if(isTrafficLights) {
+					if(pxcor % roadLength == 0 && pycor % roadLength == 0 ) {	//jestem na skrzyzowaniu	
+						if(isGreenLine) { 
 							self().patchAt(-1, 0).setPcolor(green());
 							self().patchAt(0, -1).setPcolor(red());
 						}
-						else{
-							self().patchAt(-1, 0).setPcolor(red());
-							self().patchAt(0, -1).setPcolor(green());
+						else {
+							def rand = Math.random();
+							if(rand < 0.5) {
+								self().patchAt(-1, 0).setPcolor(green());
+								self().patchAt(0, -1).setPcolor(red());
+							}
+							else{
+								self().patchAt(-1, 0).setPcolor(red());
+								self().patchAt(0, -1).setPcolor(green());
+							}
 						}
 					}
 				}
@@ -83,7 +88,13 @@ class UserObserver extends ReLogoObserver{
 			goPatch();
 		}
 		ask(turtles()){
-			step();
+			if(isTrafficLights) {
+				stepWithLights();
+			}
+			else {
+				stepWithRightHandPrinciple();
+			}
+			
 			sumOfStopTime = sumOfStopTime + stopTime; //stopTime - suma czasu jaki dany samochow w sumie stał
 			if(isStopped) {
 				amountOfStoppeCars +=1;
