@@ -8,8 +8,8 @@
 	<parameter name="default_observer_maxPycor" displayName="default_observer_maxPycor" type="int" defaultValue="16"/>
 	<parameter name="maxCarNumber" displayName="Liczba samochodow" type="int" defaultValue="50"/>
 	<parameter name="roadLength" displayName="Dlugosc drogi miedzy dwoma skrzyzowaniami" type="int" defaultValue="7"/>
-	<parameter name="maxCarSpeed" displayName="Maksymalna predkosc pojazdu" type="int" defaultValue="1"/>
-	<parameter name="maxCarAcceleration" displayName="Maksymalne pzyspieszenie pojazdu" type="int" defaultValue="1"/>
+	<parameter name="maxCarSpeed" displayName="Maksymalna predkosc pojazdu" type="float" defaultValue="1"/>
+	<parameter name="maxCarAcceleration" displayName="Maksymalne pzyspieszenie pojazdu" type="float" defaultValue="1"/>
 	<parameter name="trafficLightsChangeDuration" displayName="Czas zmiany swiatel" type="int" defaultValue="10"/>
 	<parameter name="isTrafficLights" displayName="Czy zamodelowac swiat ze swiatlami drogowymi" type="boolean" defaultValue="true"/>
 	<parameter name="isGreenLine" displayName="Czas zamodelowac swiat z zielona falą" type="boolean" defaultValue="false"/>

@@ -5,6 +5,7 @@ import static repast.simphony.relogo.UtilityG.*;
 
 import repast.simphony.parameter.Parameters
 import repast.simphony.relogo.Patch
+import repast.simphony.relogo.ReLogoModel
 import repast.simphony.relogo.Stop;
 import repast.simphony.relogo.Utility;
 import repast.simphony.relogo.UtilityG;
@@ -15,8 +16,10 @@ import repast.simphony.engine.environment.RunEnvironment;
 
 class UserObserver extends ReLogoObserver{
 
-	//TODO - wsadowe
 	Parameters p = RunEnvironment.getInstance().getParameters();
+	Object pg = RunEnvironment.getInstance().endAt(500);
+
+
 	int maxCarNumber = p.getValue("maxCarNumber");
 	int roadLength = p.getValue("roadLength");
 	boolean isTrafficLights = p.getValue("isTrafficLights");
@@ -29,7 +32,8 @@ class UserObserver extends ReLogoObserver{
 		def currentCarNumber = 0;
 
 		ask(patches()){
-			if(pxcor % roadLength == 0 || pycor % roadLength == 0 ) {//rysuje drogi
+			if(pxcor % roadLength == 0 || pycor % roadLength == 0 ) {
+				//rysuje drogi
 				if(pcolor != green() && pcolor != red()) {
 					pcolor = white();
 
@@ -83,17 +87,22 @@ class UserObserver extends ReLogoObserver{
 	def sumOfStopTime = 0;
 	def amountOfStoppeCars = 0;
 	def amountOfCarsCrossingCrossing = 0;
+	def allCarsRoad = 0;
+	int tick = 0;
 
 	@Go
 	def go(){
+		tick += 1
 		sumOfStopTime = 0;
 		amountOfStoppeCars = 0; //w danej chwili
 
-		if(isTrafficLights) {
-			ask(patches()){
+
+		ask(patches()){
+			if(isTrafficLights) {
 				goPatch();
 			}
 		}
+
 		ask(turtles()){
 			if(isTrafficLights) {
 				stepWithLights();
@@ -103,6 +112,9 @@ class UserObserver extends ReLogoObserver{
 			}
 
 			sumOfStopTime = sumOfStopTime + stopTime; //stopTime - suma czasu jaki dany samochow w sumie stał
+			allCarsRoad += sCurrent;
+			print("SCurrent: " + sCurrent)
+			print("allRoad: "+ allCarsRoad)
 			if(isStopped) {
 				amountOfStoppeCars +=1;
 			}
@@ -122,33 +134,23 @@ class UserObserver extends ReLogoObserver{
 
 	def averageSumOfCarsThatCrossCrossing() {
 		//srednia liczba samochodow, ktore przejechaly skrzyzowania
-		return amountOfCarsCrossingCrossing / tick();
+		if(tick > 0) {
+			return (amountOfCarsCrossingCrossing / tick);
+		}
+		else {
+			return 0;
+		}
 	}
 
+	def calculateAverageCarsSpeed() {
+		print(allCarsRoad)
+		if(tick > 0) {
+			return (allCarsRoad / (tick * maxCarNumber));
+		}
+		else {
+			return 0;
+		}
+	}
 
-
-
-
-	/**
-	 * Add observer methods here. For example:
-	 @Setup
-	 def setup(){
-	 clearAll()
-	 createTurtles(10){
-	 forward(random(10))
-	 }
-	 }
-	 *
-	 * or
-	 * 	
-	 @Go
-	 def go(){
-	 ask(turtles()){
-	 left(random(90))
-	 right(random(90))
-	 forward(random(10))
-	 }
-	 }
-	 */
 
 }

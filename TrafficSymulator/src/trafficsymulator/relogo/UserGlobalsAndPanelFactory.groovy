@@ -4,19 +4,10 @@ import repast.simphony.relogo.factories.AbstractReLogoGlobalsAndPanelFactory
 
 public class UserGlobalsAndPanelFactory extends AbstractReLogoGlobalsAndPanelFactory{
 	public void addGlobalsAndPanelComponents(){
-		//addSliderWL("roadLength", "Dlugosc drogi miedzy dwoma skrzyzowaniami: ", 1, 1, 20, 7)
-		//addSliderWL("maxCarSpeed", "Maksymalna predkosc pojazdu: ", 0.01, 0.01, 1, 1)
-		//addSliderWL("maxCarAcceleration", "Maksymalne pzyspieszenie pojazdu: ", 0.01, 0.01, 1, 1)
-		//addSliderWL("trafficLightsChangeDuration", "Czas zmiany swiatel: ", 1, 1, 100, 10)
-
 		addMonitorWL("calculateAverageWaitTime", "Sredni czas oczekiwania na swiatlach", 1.0);
 		addMonitorWL("calculateAmountOfStoppedCars", "Liczba zatrzymanych pojazdow", 1.0);
-		//addMonitorWL("calculateAverageCarsSpeed", "Srednia predkosc pojazdow", 0.1);
-		//addMonitorWL("averageSumOfCarsThatCrossCrossing", "Srednia liczba samochodow, ktore przejechaly skrzyzowania", 0.1);
-
-
-
-
+		addMonitorWL("calculateAverageCarsSpeed", "Srednia predkosc pojazdow", 1.0);
+		addMonitorWL("averageSumOfCarsThatCrossCrossing", "Srednia liczba samochodow, ktore przejechaly skrzyzowania", 1.0);
 
 
 		/**

@@ -15,9 +15,9 @@ import repast.simphony.engine.environment.RunEnvironment;
 
 class UserTurtle extends ReLogoTurtle{
 	Parameters p = RunEnvironment.getInstance().getParameters();
-	int maxCarSpeed = p.getValue("maxCarSpeed");
-	int maxCarAcceleration = p.getValue("maxCarAcceleration");
-	
+	float maxCarSpeed = p.getValue("maxCarSpeed");
+	float maxCarAcceleration = p.getValue("maxCarAcceleration");
+
 	def stopTime = 0;
 	def isStopped;
 	def isCrossingCrossing;
@@ -28,6 +28,7 @@ class UserTurtle extends ReLogoTurtle{
 	def a = 1.2;
 	def sPrevious = 0;
 	def tSinceStart = 0;
+	def sCurrent = 0;
 	/*
 	 * 	"maxCarNumber", "Maksymalna liczba samochodow: ", 1, 1, 200, 50)	
 	 "roadLength", "D³ugoœæ drogi miêdzy dwoma skrzy¿owaniami: ", 1, 1, 20, 7)
@@ -37,9 +38,18 @@ class UserTurtle extends ReLogoTurtle{
 	 */
 
 	def forward() {
-		def sCurrent;
 		vCurrent = a * tSinceStart;
 		tSinceStart += 1;
+
+		if( self().patchAt(-1,0).pcolor!=gray()  && self().patchAt(0, 1).pcolor!=gray()  &&
+		self().patchAt(1, 0).pcolor!=gray()  &&	self().patchAt(0,-1).pcolor!=gray() ) {
+			//czyli jesli jest na skrzyzowaniu
+			isCrossingCrossing = true
+		}
+		else {
+			isCrossingCrossing = false
+		}
+
 		if(vCurrent <= maxCarSpeed) {
 			sCurrent = 0.5 * a * tSinceStart - sPrevious;
 		}
@@ -54,7 +64,16 @@ class UserTurtle extends ReLogoTurtle{
 
 	def stepWithLights() {
 		isStopped = true
-		isCrossingCrossing = false
+		
+		if( self().patchAt(-1,0).pcolor!=gray()  && self().patchAt(0, 1).pcolor!=gray()  &&
+			self().patchAt(1, 0).pcolor!=gray()  &&	self().patchAt(0,-1).pcolor!=gray() ) {
+				//czyli jesli jest na skrzyzowaniu
+				isCrossingCrossing = true
+			}
+			else {
+				isCrossingCrossing = false
+			}
+		
 		if(self().patchAt(0,0).pcolor != red()  ) {
 			if(self().getHeading() == 90) {
 				if(self().patchAt(1,0).turtlesHere().isEmpty()) {
