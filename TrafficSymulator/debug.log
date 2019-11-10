@@ -975,3 +975,7 @@ Possible solutions: run(java.lang.String), cro(int), crt(int), getP(), getPg(), 
 	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
 	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
 	at java.lang.Thread.run(Unknown Source)
+INFO  [AWT-EventQueue-0] 2019-11-10 16:09:50,955 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-10 16:09:51,048 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\batch\batch_params.xml to
+	C:\Users\Kasia\AppData\Local\Temp\unrolledParamFile.txt

@@ -1,7 +1,7 @@
 model.archive = C:/Users/Kasia/Desktop/SZ_ForestInFire/TrafficSymulator/output/complete_model.jar
 batch.params.file = scenario.rs/batch_params.xml
 ssh.key_dir = C:/Users/Kasia/.ssh
-poll.frequency = 30.0
+poll.frequency = 60.0
 model.output = C:/Users/Kasia/Desktop/SZ_ForestInFire/TrafficSymulator/output
 
 vm.arguments = 
