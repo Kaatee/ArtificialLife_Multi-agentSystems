@@ -12,6 +12,6 @@
 	<parameter name="maxCarAcceleration" displayName="Maksymalne pzyspieszenie pojazdu" type="float" defaultValue="1"/>
 	<parameter name="trafficLightsChangeDuration" displayName="Czas zmiany swiatel" type="int" defaultValue="10"/>
 	<parameter name="isTrafficLights" displayName="Czy zamodelowac swiat ze swiatlami drogowymi" type="boolean" defaultValue="true"/>
-	<parameter name="isGreenLine" displayName="Czas zamodelowac swiat z zielona falą" type="boolean" defaultValue="false"/>
+	<parameter name="percentageOfCarsWithLessAcceleration" displayName="Ulamek wszystkich samochodow z mniejszym przyspieszeniam (w %)" type="int" defaultValue="5"/>
 
 </parameters>

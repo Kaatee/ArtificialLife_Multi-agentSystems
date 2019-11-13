@@ -16,7 +16,6 @@ import repast.simphony.engine.environment.RunEnvironment;
 class UserTurtle extends ReLogoTurtle{
 	Parameters p = RunEnvironment.getInstance().getParameters();
 	float maxCarSpeed = p.getValue("maxCarSpeed");
-	float maxCarAcceleration = p.getValue("maxCarAcceleration");
 
 	def stopTime = 0;
 	def isStopped;
@@ -25,17 +24,10 @@ class UserTurtle extends ReLogoTurtle{
 	def isRecentlyStoppedOnCrossing = false;
 
 	def vCurrent = 0;
-	def a = 1.2;
+	def a;
 	def sPrevious = 0;
 	def tSinceStart = 0;
 	def sCurrent = 0;
-	/*
-	 * 	"maxCarNumber", "Maksymalna liczba samochodow: ", 1, 1, 200, 50)	
-	 "roadLength", "D³ugoœæ drogi miêdzy dwoma skrzy¿owaniami: ", 1, 1, 20, 7)
-	 "maxCarSpeed", "Maksymalna prêdkoœæ pojazdu: ", 0.01, 0.01, 1, 1)
-	 "maxCarAcceleration", "Maksumalne pzyœpieszenie pojazdu: ", 0.01, 0.01, 1, 1)
-	 "trafficLightsChangeDuration", "Czas zmiany œwiate³: ", 1, 1, 100, 10)
-	 */
 
 	def forward() {
 		vCurrent = a * tSinceStart;

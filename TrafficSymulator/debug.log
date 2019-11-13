@@ -1,981 +1,801 @@
-FATAL [Thread-7] 2019-10-29 18:59:11,981 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (0.0)
-java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
-	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.reflect.InvocationTargetException
-	at trafficsymulator.relogo.UserObserver$$FastClassByCGLIB$$cbea1d9a.invoke(<generated>)
-	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
-	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
-	... 7 more
-Caused by: groovy.lang.MissingPropertyException: No such property: Human for class: trafficsymulator.relogo.UserObserver
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)
-	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.getProperty(GetEffectivePogoPropertySite.java:87)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:310)
-	at trafficsymulator.relogo.UserObserver.setup(UserObserver.groovy:40)
-	... 10 more
-FATAL [Thread-7] 2019-10-29 19:00:07,691 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (0.0)
-java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
-	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.reflect.InvocationTargetException
-	at trafficsymulator.relogo.UserObserver$$FastClassByCGLIB$$cbea1d9a.invoke(<generated>)
-	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
-	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
-	... 7 more
-Caused by: groovy.lang.MissingMethodException: No signature of method: trafficsymulator.relogo.UserObserver.createUserPatch() is applicable for argument types: (java.lang.Integer, trafficsymulator.relogo.UserObserver$_setup_closure2) values: [10, trafficsymulator.relogo.UserObserver$_setup_closure2@5b5a5a22]
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:71)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:80)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:177)
-	at trafficsymulator.relogo.UserObserver.setup(UserObserver.groovy:41)
-	... 10 more
-FATAL [Thread-7] 2019-10-29 19:05:25,845 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (0.0)
-java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
-	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.reflect.InvocationTargetException
-	at trafficsymulator.relogo.UserObserver$$FastClassByCGLIB$$cbea1d9a.invoke(<generated>)
-	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
-	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
-	... 7 more
-Caused by: groovy.lang.MissingMethodException: No signature of method: trafficsymulator.relogo.UserObserver.createUserPatch() is applicable for argument types: (java.lang.Integer, trafficsymulator.relogo.UserObserver$_setup_closure2) values: [10, trafficsymulator.relogo.UserObserver$_setup_closure2@66fea705]
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:71)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:80)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:177)
-	at trafficsymulator.relogo.UserObserver.setup(UserObserver.groovy:41)
-	... 10 more
-FATAL [Thread-7] 2019-10-29 21:14:24,696 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (0.0)
-java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
-	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.reflect.InvocationTargetException
-	at trafficsymulator.relogo.UserObserver$$FastClassByCGLIB$$cbea1d9a.invoke(<generated>)
-	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
-	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
-	... 7 more
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	Groovy:unexpected token: ) @ line 21, column 7.
-	Groovy:expecting '}', found ')' @ line 21, column 7.
-
-	at trafficsymulator.relogo.UserTurtle.<init>(UserTurtle.groovy:21)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at java.lang.Class.newInstance(Unknown Source)
-	at repast.simphony.relogo.factories.TurtleFactory.createTurtle(TurtleFactory.java:156)
-	at repast.simphony.relogo.factories.TurtleFactory.createTurtle(TurtleFactory.java:121)
-	at repast.simphony.relogo.AbstractObserver.crt(AbstractObserver.java:425)
-	at trafficsymulator.ReLogoObserver.createUserTurtles(ReLogoObserver.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:352)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:68)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:177)
-	at trafficsymulator.relogo.UserObserver$_setup_closure1.doCall(UserObserver.groovy:35)
-	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at groovy.lang.Closure.call(Closure.java:436)
-	at repast.simphony.relogo.AbstractAgentSet.askAgentSet(AbstractAgentSet.java:35)
-	at repast.simphony.relogo.AbstractObserver.ask(AbstractObserver.java:136)
-	at repast.simphony.relogo.Observer$ask$1.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:177)
-	at trafficsymulator.relogo.UserObserver.setup(UserObserver.groovy:25)
-	... 10 more
-FATAL [AWT-EventQueue-0] 2019-11-02 10:39:46,098 repast.simphony.ui.RSUIPlugin - Fatal error starting Repast
-java.lang.Error: Unresolved compilation problem: 
-	Groovy:Cannot override method java.lang.Object getMaxCarNumber() in trafficsymulator.ReLogoObserver with new method having a primitive return type and old method not
-
-	at trafficsymulator.context.SimBuilder.<init>(SimBuilder.groovy:65535)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at java.lang.Class.newInstance(Unknown Source)
-	at repast.simphony.dataLoader.engine.ClassNameContextBuilder.<init>(ClassNameContextBuilder.java:21)
-	at repast.simphony.dataLoader.engine.ClassNameDataLoaderAction.<init>(ClassNameDataLoaderAction.java:23)
-	at repast.simphony.dataLoader.engine.CNDataLoaderActionLoader.performLoad(CNDataLoaderActionLoader.java:35)
-	at repast.simphony.scenario.AbstractActionLoader.loadAction(AbstractActionLoader.java:35)
-	at repast.simphony.scenario.ScenarioFileLoader.createActions(ScenarioFileLoader.java:90)
-	at repast.simphony.scenario.ScenarioFileLoader.load(ScenarioFileLoader.java:66)
-	at repast.simphony.scenario.ScenarioLoader.load(ScenarioLoader.java:199)
-	at repast.simphony.ui.RSApplication.open(RSApplication.java:359)
-	at repast.simphony.ui.RSAppConfigurator.postWindowOpen(RSAppConfigurator.java:39)
-	at saf.core.ui.GUICreatorDelegate.runDisplay(GUICreatorDelegate.java:216)
-	at saf.core.ui.GUICreator$1.run(GUICreator.java:18)
-	at simphony.util.ThreadUtilities$Runner.run(ThreadUtilities.java:33)
-	at simphony.util.ThreadUtilities.runInEventThread(ThreadUtilities.java:47)
-	at saf.core.ui.GUICreator.runDisplay(GUICreator.java:16)
-	at repast.simphony.ui.RSUIPlugin$1.run(RSUIPlugin.java:101)
-	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
-	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-	at java.awt.EventQueue.access$500(Unknown Source)
-	at java.awt.EventQueue$3.run(Unknown Source)
-	at java.awt.EventQueue$3.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
-	at java.awt.EventQueue.dispatchEvent(Unknown Source)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-	at java.awt.EventDispatchThread.run(Unknown Source)
-FATAL [AWT-EventQueue-0] 2019-11-02 12:37:15,426 repast.simphony.ui.RSUIPlugin - Fatal error starting Repast
-java.lang.Error: Unresolved compilation problem: 
-	Groovy:Cannot override method java.lang.Object getMaxCarNumber() in trafficsymulator.ReLogoObserver with new method having a primitive return type and old method not
-
-	at trafficsymulator.context.SimBuilder.<init>(SimBuilder.groovy:65535)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at java.lang.Class.newInstance(Unknown Source)
-	at repast.simphony.dataLoader.engine.ClassNameContextBuilder.<init>(ClassNameContextBuilder.java:21)
-	at repast.simphony.dataLoader.engine.ClassNameDataLoaderAction.<init>(ClassNameDataLoaderAction.java:23)
-	at repast.simphony.dataLoader.engine.CNDataLoaderActionLoader.performLoad(CNDataLoaderActionLoader.java:35)
-	at repast.simphony.scenario.AbstractActionLoader.loadAction(AbstractActionLoader.java:35)
-	at repast.simphony.scenario.ScenarioFileLoader.createActions(ScenarioFileLoader.java:90)
-	at repast.simphony.scenario.ScenarioFileLoader.load(ScenarioFileLoader.java:66)
-	at repast.simphony.scenario.ScenarioLoader.load(ScenarioLoader.java:199)
-	at repast.simphony.ui.RSApplication.open(RSApplication.java:359)
-	at repast.simphony.ui.RSAppConfigurator.postWindowOpen(RSAppConfigurator.java:39)
-	at saf.core.ui.GUICreatorDelegate.runDisplay(GUICreatorDelegate.java:216)
-	at saf.core.ui.GUICreator$1.run(GUICreator.java:18)
-	at simphony.util.ThreadUtilities$Runner.run(ThreadUtilities.java:33)
-	at simphony.util.ThreadUtilities.runInEventThread(ThreadUtilities.java:47)
-	at saf.core.ui.GUICreator.runDisplay(GUICreator.java:16)
-	at repast.simphony.ui.RSUIPlugin$1.run(RSUIPlugin.java:101)
-	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
-	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-	at java.awt.EventQueue.access$500(Unknown Source)
-	at java.awt.EventQueue$3.run(Unknown Source)
-	at java.awt.EventQueue$3.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
-	at java.awt.EventQueue.dispatchEvent(Unknown Source)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-	at java.awt.EventDispatchThread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-05 17:24:41,753 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-groovy.lang.MissingMethodException: No signature of method: trafficsymulator.relogo.UserObserver.calculateAverageWaitTime() is applicable for argument types: () values: []
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:71)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:183)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy9.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-05 17:35:25,269 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-groovy.lang.MissingPropertyException: No such property: sumOfStopTime for class: trafficsymulator.relogo.UserObserver
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)
-	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.getProperty(GetEffectivePogoPropertySite.java:87)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:310)
-	at trafficsymulator.relogo.UserObserver.calculateAverageWaitTime(UserObserver.groovy:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy9.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-05 17:56:44,918 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method java.lang.Integer#div.
-Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
-	[class java.lang.Character]
-	[class java.lang.Number]
-	at groovy.lang.MetaClassImpl.doChooseMostSpecificParams(MetaClassImpl.java:3251)
-	at groovy.lang.MetaClassImpl.chooseMostSpecificParams(MetaClassImpl.java:3228)
-	at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3217)
-	at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3160)
-	at groovy.lang.MetaClassImpl.getMethodWithCachingInternal(MetaClassImpl.java:1348)
-	at groovy.lang.MetaClassImpl.createPojoCallSite(MetaClassImpl.java:3406)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createPojoSite(CallSiteArray.java:131)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createCallSite(CallSiteArray.java:165)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at trafficsymulator.relogo.UserObserver.averageSumOfCarsThatCrossCrossing(UserObserver.groovy:97)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy9.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-05 17:57:59,684 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method java.lang.Integer#div.
-Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
-	[class java.lang.Character]
-	[class java.lang.Number]
-	at groovy.lang.MetaClassImpl.doChooseMostSpecificParams(MetaClassImpl.java:3251)
-	at groovy.lang.MetaClassImpl.chooseMostSpecificParams(MetaClassImpl.java:3228)
-	at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3217)
-	at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3160)
-	at groovy.lang.MetaClassImpl.getMethodWithCachingInternal(MetaClassImpl.java:1348)
-	at groovy.lang.MetaClassImpl.createPojoCallSite(MetaClassImpl.java:3406)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createPojoSite(CallSiteArray.java:131)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createCallSite(CallSiteArray.java:165)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at trafficsymulator.relogo.UserObserver.averageSumOfCarsThatCrossCrossing(UserObserver.groovy:97)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy9.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-05 17:59:23,718 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method java.lang.Integer#div.
-Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
-	[class java.lang.Character]
-	[class java.lang.Number]
-	at groovy.lang.MetaClassImpl.doChooseMostSpecificParams(MetaClassImpl.java:3251)
-	at groovy.lang.MetaClassImpl.chooseMostSpecificParams(MetaClassImpl.java:3228)
-	at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3217)
-	at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3160)
-	at groovy.lang.MetaClassImpl.getMethodWithCachingInternal(MetaClassImpl.java:1348)
-	at groovy.lang.MetaClassImpl.createPojoCallSite(MetaClassImpl.java:3406)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createPojoSite(CallSiteArray.java:131)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createCallSite(CallSiteArray.java:165)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at trafficsymulator.relogo.UserObserver.averageSumOfCarsThatCrossCrossing(UserObserver.groovy:97)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy9.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-09 10:32:54,937 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method java.lang.Integer#div.
-Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
-	[class java.lang.Character]
-	[class java.lang.Number]
-	at groovy.lang.MetaClassImpl.doChooseMostSpecificParams(MetaClassImpl.java:3251)
-	at groovy.lang.MetaClassImpl.chooseMostSpecificParams(MetaClassImpl.java:3228)
-	at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3217)
-	at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3160)
-	at groovy.lang.MetaClassImpl.getMethodWithCachingInternal(MetaClassImpl.java:1348)
-	at groovy.lang.MetaClassImpl.createPojoCallSite(MetaClassImpl.java:3406)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createPojoSite(CallSiteArray.java:131)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createCallSite(CallSiteArray.java:165)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at trafficsymulator.relogo.UserObserver.averageSumOfCarsThatCrossCrossing(UserObserver.groovy:97)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy9.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-10 11:36:40,007 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (0.0)
-java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
-	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.reflect.InvocationTargetException
-	at trafficsymulator.relogo.UserObserver$$FastClassByCGLIB$$cbea1d9a.invoke(<generated>)
-	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
-	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
-	... 7 more
-Caused by: java.lang.Error: Unresolved compilation problem: 
-	Groovy:unexpected token: ) @ line 78, column 6.
-
-	at trafficsymulator.relogo.UserTurtle.<init>(UserTurtle.groovy:78)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at java.lang.Class.newInstance(Unknown Source)
-	at repast.simphony.relogo.factories.TurtleFactory.createTurtle(TurtleFactory.java:156)
-	at repast.simphony.relogo.factories.TurtleFactory.createTurtle(TurtleFactory.java:121)
-	at repast.simphony.relogo.AbstractObserver.crt(AbstractObserver.java:425)
-	at trafficsymulator.ReLogoObserver.createUserTurtles(ReLogoObserver.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:352)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:68)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:177)
-	at trafficsymulator.relogo.UserObserver$_setup_closure1.doCall(UserObserver.groovy:31)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at groovy.lang.Closure.call(Closure.java:436)
-	at repast.simphony.relogo.AbstractAgentSet.askAgentSet(AbstractAgentSet.java:35)
-	at repast.simphony.relogo.AbstractObserver.ask(AbstractObserver.java:136)
-	at repast.simphony.relogo.Observer$ask$2.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:177)
-	at trafficsymulator.relogo.UserObserver.setup(UserObserver.groovy:22)
-	... 10 more
-FATAL [Thread-7] 2019-11-10 13:01:06,812 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-groovy.lang.MissingPropertyException: No such property: maxCarNumber for class: trafficsymulator.relogo.UserObserver
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)
-	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.getProperty(GetEffectivePogoPropertySite.java:87)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:310)
-	at trafficsymulator.relogo.UserObserver.calculateAverageWaitTime(UserObserver.groovy:111)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy8.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-10 13:03:35,753 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-groovy.lang.MissingPropertyException: No such property: maxCarNumber for class: trafficsymulator.relogo.UserObserver
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)
-	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.getProperty(GetEffectivePogoPropertySite.java:87)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:310)
-	at trafficsymulator.relogo.UserObserver.calculateAverageWaitTime(UserObserver.groovy:111)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy8.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-ERROR [AWT-EventQueue-0] 2019-11-10 13:05:25,636 repast.simphony.ui.RSApplication - Error while initializing simulation
-groovy.lang.MissingPropertyException: No such property: RunEnvironment for class: trafficsymulator.relogo.UserObserver
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)
-	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.getProperty(GetEffectivePogoPropertySite.java:87)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:310)
-	at trafficsymulator.relogo.UserObserver.<init>(UserObserver.groovy:18)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at java.lang.Class.newInstance(Unknown Source)
-	at repast.simphony.relogo.factories.ObserverFactory.createObserver(ObserverFactory.java:28)
-	at repast.simphony.relogo.factories.ObserverFactory$createObserver.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
-	at trafficsymulator.context.SimBuilder.build(SimBuilder.groovy:46)
-	at repast.simphony.dataLoader.engine.ClassNameContextBuilder.build(ClassNameContextBuilder.java:41)
-	at repast.simphony.dataLoader.engine.DataLoaderControllerAction.runInitialize(DataLoaderControllerAction.java:48)
-	at repast.simphony.engine.controller.DefaultController$2.visit(DefaultController.java:214)
-	at repast.simphony.engine.controller.DefaultController$2.visit(DefaultController.java:1)
-	at repast.simphony.util.collections.NaryTree.preOrderTraverals(NaryTree.java:292)
-	at repast.simphony.util.collections.NaryTree.preOrderTraverals(NaryTree.java:295)
-	at repast.simphony.util.collections.NaryTree.preOrderTraverals(NaryTree.java:295)
-	at repast.simphony.util.collections.NaryTree.preOrderTraversal(NaryTree.java:288)
-	at repast.simphony.engine.controller.DefaultController.runInitialize(DefaultController.java:212)
-	at repast.simphony.engine.controller.DefaultController.runInitialize(DefaultController.java:383)
-	at repast.simphony.ui.RSApplication.initSim(RSApplication.java:157)
-	at repast.simphony.ui.action.InitRun.actionPerformed(InitRun.java:17)
-	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
-	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
-	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
-	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
-	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
-	at java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
-	at java.awt.Component.processMouseEvent(Unknown Source)
-	at javax.swing.JComponent.processMouseEvent(Unknown Source)
-	at java.awt.Component.processEvent(Unknown Source)
-	at java.awt.Container.processEvent(Unknown Source)
-	at java.awt.Component.dispatchEventImpl(Unknown Source)
-	at java.awt.Container.dispatchEventImpl(Unknown Source)
-	at java.awt.Component.dispatchEvent(Unknown Source)
-	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
-	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
-	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
-	at java.awt.Container.dispatchEventImpl(Unknown Source)
-	at java.awt.Window.dispatchEventImpl(Unknown Source)
-	at java.awt.Component.dispatchEvent(Unknown Source)
-	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
-	at java.awt.EventQueue.access$500(Unknown Source)
-	at java.awt.EventQueue$3.run(Unknown Source)
-	at java.awt.EventQueue$3.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
-	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
-	at java.awt.EventQueue$4.run(Unknown Source)
-	at java.awt.EventQueue$4.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
-	at java.awt.EventQueue.dispatchEvent(Unknown Source)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
-	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
-	at java.awt.EventDispatchThread.run(Unknown Source)
-INFO  [AWT-EventQueue-0] 2019-11-10 13:41:32,019 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\output\config.props
-INFO  [AWT-EventQueue-0] 2019-11-10 13:41:32,151 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
-	C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\batch\batch_params.xml to
-	C:\Users\Kasia\AppData\Local\Temp\unrolledParamFile.txt
-INFO  [AWT-EventQueue-0] 2019-11-10 14:23:38,009 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\output\config.props
-INFO  [AWT-EventQueue-0] 2019-11-10 14:23:38,095 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
-	C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\batch\batch_params.xml to
-	C:\Users\Kasia\AppData\Local\Temp\unrolledParamFile.txt
-FATAL [Thread-7] 2019-11-10 15:08:12,502 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-java.lang.NullPointerException: Cannot invoke method multiply() on null object
-	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:91)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:47)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.NullCallSite.call(NullCallSite.java:34)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at trafficsymulator.relogo.UserObserver.calculateAverageCarsSpeed(UserObserver.groovy:131)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy7.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-10 15:11:27,923 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-java.lang.NullPointerException: Cannot invoke method multiply() on null object
-	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:91)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:47)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.NullCallSite.call(NullCallSite.java:34)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at trafficsymulator.relogo.UserObserver.calculateAverageCarsSpeed(UserObserver.groovy:134)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy7.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-10 15:13:18,329 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-java.lang.NullPointerException: Cannot invoke method multiply() on null object
-	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:91)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:47)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.NullCallSite.call(NullCallSite.java:34)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at trafficsymulator.relogo.UserObserver.calculateAverageCarsSpeed(UserObserver.groovy:134)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy7.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-10 15:13:53,155 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method java.lang.Integer#div.
-Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
-	[class java.lang.Character]
-	[class java.lang.Number]
-	at groovy.lang.MetaClassImpl.doChooseMostSpecificParams(MetaClassImpl.java:3251)
-	at groovy.lang.MetaClassImpl.chooseMostSpecificParams(MetaClassImpl.java:3228)
-	at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3217)
-	at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3160)
-	at groovy.lang.MetaClassImpl.getMethodWithCachingInternal(MetaClassImpl.java:1348)
-	at groovy.lang.MetaClassImpl.createPojoCallSite(MetaClassImpl.java:3406)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createPojoSite(CallSiteArray.java:131)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createCallSite(CallSiteArray.java:165)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at trafficsymulator.relogo.UserObserver.averageSumOfCarsThatCrossCrossing(UserObserver.groovy:130)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy7.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-10 15:19:25,264 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-groovy.lang.MissingMethodException: No signature of method: trafficsymulator.relogo.UserObserver.round() is applicable for argument types: (java.lang.Double, java.lang.Integer) values: [NaN, 1]
-Possible solutions: find(), run(java.lang.String), go(), dump(), any(), cro(int)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:71)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:80)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:177)
-	at trafficsymulator.relogo.UserObserver.calculateAverageCarsSpeed(UserObserver.groovy:136)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy7.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-10 15:49:04,856 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-java.lang.ArithmeticException: Division undefined
-	at java.math.BigDecimal.divide(Unknown Source)
-	at org.codehaus.groovy.runtime.typehandling.BigDecimalMath.divideImpl(BigDecimalMath.java:68)
-	at org.codehaus.groovy.runtime.typehandling.IntegerMath.divideImpl(IntegerMath.java:49)
-	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberDiv$NumberNumber.invoke(NumberNumberDiv.java:323)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at trafficsymulator.relogo.UserObserver.calculateAverageCarsSpeed(UserObserver.groovy:141)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy7.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-FATAL [Thread-7] 2019-11-10 15:51:57,753 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
-Current tick (1.0)
-groovy.lang.MissingMethodException: No signature of method: trafficsymulator.relogo.UserObserver.reurn() is applicable for argument types: (java.lang.Integer) values: [0]
-Possible solutions: run(java.lang.String), cro(int), crt(int), getP(), getPg(), setup()
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:71)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:80)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
-	at trafficsymulator.relogo.UserObserver.calculateAverageCarsSpeed(UserObserver.groovy:150)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:947)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:930)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodN(ScriptBytecodeAdapter.java:181)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethod0(ScriptBytecodeAdapter.java:202)
-	at repast.simphony.relogo.factories.ReLogoGlobalsAndPanelComponentsFactory$_createMonitor_closure5.doCall(ReLogoGlobalsAndPanelComponentsFactory.groovy:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
-	at groovy.lang.Closure.call(Closure.java:420)
-	at org.codehaus.groovy.runtime.ConvertedMap.invokeCustom(ConvertedMap.java:56)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
-	at com.sun.proxy.$Proxy7.execute(Unknown Source)
-	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
-	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
-	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
-	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
-	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
-	at java.lang.Thread.run(Unknown Source)
-INFO  [AWT-EventQueue-0] 2019-11-10 16:09:50,955 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\output\config.props
-INFO  [AWT-EventQueue-0] 2019-11-10 16:09:51,048 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
-	C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\batch\batch_params.xml to
-	C:\Users\Kasia\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14748.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14749.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14749.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14750.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14751.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14751.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14752.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14752.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14753.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14754.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14754.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14755.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14755.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14756.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14757.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14757.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14758.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14758.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14759.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14760.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14760.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14761.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14761.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14762.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14763.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14763.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14764.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14764.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14765.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14766.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14766.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14767.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14767.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14768.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14769.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14769.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14770.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14770.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14771.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14772.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14772.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14773.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14773.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14774.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14775.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14775.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14776.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14776.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14777.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14778.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14778.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14779.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14779.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14780.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14781.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14781.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14782.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14782.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14783.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14784.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14784.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14785.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14785.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14786.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14787.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14787.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14788.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14788.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14789.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14790.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14790.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14791.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14791.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14792.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14793.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14793.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14794.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14794.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14795.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14796.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14796.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14797.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14797.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14798.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14799.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14799.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14800.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14800.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14801.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14802.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14802.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14803.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14803.80
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14804.40
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14805.00
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14805.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14806.20
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,304 repast.simphony.batch.ssh.LocalSession - allRoad: 14806.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14807.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14808.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14808.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14809.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14809.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14810.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14811.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14811.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14812.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14812.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14813.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14814.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14814.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14815.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14815.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14816.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14817.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14817.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14818.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14818.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14819.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14820.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14820.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14821.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14821.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14822.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14823.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14823.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14824.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14824.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14825.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14826.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14826.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14827.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14827.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14828.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14829.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14829.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14830.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14830.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14831.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14832.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14832.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14833.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14833.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14834.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14835.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14835.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14836.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14836.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14837.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14838.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14838.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14839.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14839.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14840.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14841.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14841.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14842.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14842.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14843.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14844.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14844.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14845.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14845.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14846.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14847.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14847.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14848.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14848.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14849.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14850.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14850.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14851.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14851.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14852.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14853.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14853.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14854.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14854.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14855.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14856.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14856.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14857.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14857.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14858.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14859.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14859.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14860.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14860.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14861.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14862.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14862.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14863.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14863.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14864.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14865.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14865.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14866.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14866.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14867.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14868.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14868.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14869.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14869.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14870.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14871.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14871.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14872.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14872.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14873.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14874.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14874.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14875.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14875.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14876.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14877.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14877.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14878.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14878.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14879.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14880.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14880.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14881.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14881.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14882.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14883.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14883.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14884.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14884.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14885.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14886.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14886.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14887.20
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14887.80
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14888.40
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14889.00
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,319 repast.simphony.batch.ssh.LocalSession - allRoad: 14889.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14890.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14890.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14891.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14892.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14892.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14893.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14893.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14894.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14895.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14895.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14896.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14896.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14897.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14898.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14898.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14899.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14899.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14900.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14901.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14901.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14902.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14902.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14903.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14904.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14904.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14905.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14905.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14906.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14907.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14907.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14908.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14908.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14909.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14910.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14910.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14911.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14911.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14912.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14913.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14913.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14914.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14914.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14915.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14916.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14916.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14917.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14917.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14918.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14919.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14919.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14920.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14920.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14921.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14922.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14922.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14923.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14923.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14924.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14925.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14925.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14926.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14926.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14927.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14928.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14928.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14929.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14929.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14930.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14931.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14931.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14932.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14932.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14933.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14934.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14934.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14935.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14935.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14936.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14937.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14937.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14938.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14938.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14939.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14940.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14940.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14941.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14941.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14942.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14943.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14943.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14944.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14944.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14945.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14946.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14946.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14947.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14947.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14948.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14949.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14949.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14950.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14950.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14951.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14952.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14952.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14953.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14953.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14954.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14955.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14955.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14956.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14956.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14957.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14958.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14958.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14959.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14959.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14960.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14961.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14961.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14962.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14962.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14963.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14964.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14964.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14965.20
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14965.80
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14966.40
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14967.00
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,335 repast.simphony.batch.ssh.LocalSession - allRoad: 14967.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14968.20
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14968.80
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14969.40
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14970.00
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14970.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14971.20
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14971.80
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14972.40
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14973.00
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14973.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14974.20
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14974.80
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14975.40
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14976.00
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14976.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14977.20
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14977.80
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14978.40
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14979.00
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14979.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14980.20
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14980.80
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14981.40
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14982.00
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14982.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14983.20
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14983.80
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14984.40
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14985.00
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14985.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14986.20
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - SCurrent: 0.60
+INFO  [Thread-4] 2019-11-12 17:47:34,351 repast.simphony.batch.ssh.LocalSession - allRoad: 14986.80
+INFO  [pool-3-thread-1] 2019-11-12 17:48:04,045 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573577220401 for DONE:  yes
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-12 17:48:04,047 repast.simphony.batch.ssh.SessionsDriver - Run Time: 1,0094
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-12 17:48:04,048 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573577220401
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-12 17:48:04,064 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/Kasia/Desktop/SZ_ForestInFire/TrafficSymulator/output
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-12 17:48:04,111 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0010
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-12 17:48:04,111 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 1,0618

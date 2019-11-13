@@ -17,16 +17,30 @@ import repast.simphony.engine.environment.RunEnvironment;
 class UserObserver extends ReLogoObserver{
 
 	Parameters p = RunEnvironment.getInstance().getParameters();
-	Object pg = RunEnvironment.getInstance().endAt(500);
+	Object pg = RunEnvironment.getInstance().endAt(400);
 
 
 	int maxCarNumber = p.getValue("maxCarNumber");
 	int roadLength = p.getValue("roadLength");
 	boolean isTrafficLights = p.getValue("isTrafficLights");
-	boolean isGreenLine = p.getValue("isGreenLine");
+	int percentageOfCarsWithLessAcceleration = p.getValue("percentageOfCarsWithLessAcceleration");
+	float maxCarAcceleration = p.getValue("maxCarAcceleration");
+
+	float minCarAcceleration = 0.2;
+	double highA = 0.8;
+	double lessA = 0.3;
+
+	boolean isGreenLine = false;
+	boolean ifWorldWithSomeCarsHasLessAcc = false;
+
 
 	@Setup
 	def setup(){
+
+		if(percentageOfCarsWithLessAcceleration > 0) {
+			ifWorldWithSomeCarsHasLessAcc = true;
+		}
+
 		clearAll()
 		setDefaultShape(UserTurtle , "car")
 		def currentCarNumber = 0;
@@ -37,13 +51,35 @@ class UserObserver extends ReLogoObserver{
 				if(pcolor != green() && pcolor != red()) {
 					pcolor = white();
 
-					if(currentCarNumber < maxCarNumber ) {
+					if(currentCarNumber < maxCarNumber) {
 						def x = pxcor
 						def y = pycor
 						currentCarNumber = currentCarNumber + 1;
-						createUserTurtles(1){
-							setColor(black());
-							setxy(x, y)
+						if(!ifWorldWithSomeCarsHasLessAcc) {
+							Random r = new Random();
+							float randomA = minCarAcceleration + (maxCarAcceleration - minCarAcceleration) * r.nextDouble();
+							createUserTurtles(1){
+								setColor(black());
+								setxy(x, y)
+								setA(randomA);
+							}
+						}
+						else {
+							int amountOfCarsWithLessA = Math.round(maxCarNumber * percentageOfCarsWithLessAcceleration / 100);
+							if(currentCarNumber == amountOfCarsWithLessA) {
+								createUserTurtles(1){
+									setColor(black());
+									setxy(x, y)
+									setA(lessA);
+								}
+							}
+							else {
+								createUserTurtles(1){
+									setColor(black());
+									setxy(x, y)
+									setA(highA);
+								}
+							}
 						}
 
 					}
@@ -113,8 +149,6 @@ class UserObserver extends ReLogoObserver{
 
 			sumOfStopTime = sumOfStopTime + stopTime; //stopTime - suma czasu jaki dany samochow w sumie stał
 			allCarsRoad += sCurrent;
-			print("SCurrent: " + sCurrent)
-			print("allRoad: "+ allCarsRoad)
 			if(isStopped) {
 				amountOfStoppeCars +=1;
 			}
@@ -143,7 +177,6 @@ class UserObserver extends ReLogoObserver{
 	}
 
 	def calculateAverageCarsSpeed() {
-		print(allCarsRoad)
 		if(tick > 0) {
 			return (allCarsRoad / (tick * maxCarNumber));
 		}
