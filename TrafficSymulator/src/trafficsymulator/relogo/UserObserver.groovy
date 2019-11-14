@@ -62,11 +62,12 @@ class UserObserver extends ReLogoObserver{
 								setColor(black());
 								setxy(x, y)
 								setA(randomA);
+								//setA(0.5);
 							}
 						}
 						else {
 							int amountOfCarsWithLessA = Math.round(maxCarNumber * percentageOfCarsWithLessAcceleration / 100);
-							if(currentCarNumber == amountOfCarsWithLessA) {
+							if(currentCarNumber < amountOfCarsWithLessA) {
 								createUserTurtles(1){
 									setColor(black());
 									setxy(x, y)
@@ -130,9 +131,7 @@ class UserObserver extends ReLogoObserver{
 	def go(){
 		tick += 1
 		sumOfStopTime = 0;
-		amountOfStoppeCars = 0; //w danej chwili
-
-
+		
 		ask(patches()){
 			if(isTrafficLights) {
 				goPatch();
@@ -159,7 +158,7 @@ class UserObserver extends ReLogoObserver{
 	}
 
 	def calculateAverageWaitTime() {
-		return sumOfStopTime / maxCarNumber;
+		return sumOfStopTime;
 	}
 
 	def calculateAmountOfStoppedCars() { //liczba zatrzymanych w danej chwili pojazdow
@@ -169,7 +168,7 @@ class UserObserver extends ReLogoObserver{
 	def averageSumOfCarsThatCrossCrossing() {
 		//srednia liczba samochodow, ktore przejechaly skrzyzowania
 		if(tick > 0) {
-			return (amountOfCarsCrossingCrossing / tick);
+			return amountOfCarsCrossingCrossing;
 		}
 		else {
 			return 0;

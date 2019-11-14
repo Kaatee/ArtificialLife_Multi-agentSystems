@@ -1,0 +1,2 @@
+"run","tick","calculateAverageWaitTime","averageSumOfCarsThatCrossCrossing","calculateAmountOfStoppedCars","calculateAverageCarsSpeed"
+1,400.0,8037,2087,8037,0.3643590657516782

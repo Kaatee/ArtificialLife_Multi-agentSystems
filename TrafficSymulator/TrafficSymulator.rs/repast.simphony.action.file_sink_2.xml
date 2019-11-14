@@ -4,9 +4,11 @@
   <delimiter>,</delimiter>
   <format>TABULAR</format>
   <sourceIds class="linked-hash-set">
-    <string>sumCar</string>
-    <string>amount</string>
     <string>tick</string>
+    <string>calculateAverageWaitTime</string>
+    <string>averageSumOfCarsThatCrossCrossing</string>
+    <string>calculateAmountOfStoppedCars</string>
+    <string>calculateAverageCarsSpeed</string>
   </sourceIds>
   <fileName>ModelOutput.txt</fileName>
   <addTimeStamp>true</addTimeStamp>

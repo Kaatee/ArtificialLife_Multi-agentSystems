@@ -1,0 +1,2 @@
+"tick","calculateAverageWaitTime","averageSumOfCarsThatCrossCrossing","calculateAmountOfStoppedCars","calculateAverageCarsSpeed"
+0.0,0,0,0,0

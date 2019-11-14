@@ -1,36 +1,51 @@
 <repast.simphony.data2.engine.DataSetDescriptor simphonyVersion="2.7.0">
   <name>MyDataSet</name>
-  <type>AGGREGATE</type>
+  <type>NON_AGGREGATE</type>
+  <sourceType>trafficsymulator.relogo.UserObserver</sourceType>
   <inclTick>true</inclTick>
   <inclBatchRun>false</inclBatchRun>
   <inclRandomSeed>false</inclRandomSeed>
   <scheduleParams>
-    <start>1.0</start>
-    <interval>1.0</interval>
+    <start>Infinity</start>
+    <interval>0.0</interval>
     <priority>-Infinity</priority>
     <pType>LAST</pType>
     <duration>-1.0</duration>
-    <frequency>REPEAT</frequency>
-    <hashCode>1216436410</hashCode>
+    <frequency>ONE_TIME</frequency>
+    <hashCode>949911484</hashCode>
   </scheduleParams>
   <atEnd>false</atEnd>
   <methodDataSources class="linked-hash-map">
     <entry>
-      <string>sumCar</string>
+      <string>calculateAverageWaitTime</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>sumCar</id>
+        <id>calculateAverageWaitTime</id>
         <className>trafficsymulator.relogo.UserObserver</className>
-        <methodName>averageSumOfCarsThatCrossCrossing</methodName>
-        <aggType>SUM</aggType>
+        <methodName>calculateAverageWaitTime</methodName>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>amount</string>
+      <string>averageSumOfCarsThatCrossCrossing</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>amount</id>
+        <id>averageSumOfCarsThatCrossCrossing</id>
         <className>trafficsymulator.relogo.UserObserver</className>
-        <methodName>getAmountOfCarsCrossingCrossing</methodName>
-        <aggType>SUM</aggType>
+        <methodName>averageSumOfCarsThatCrossCrossing</methodName>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>calculateAmountOfStoppedCars</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>calculateAmountOfStoppedCars</id>
+        <className>trafficsymulator.relogo.UserObserver</className>
+        <methodName>calculateAmountOfStoppedCars</methodName>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>calculateAverageCarsSpeed</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>calculateAverageCarsSpeed</id>
+        <className>trafficsymulator.relogo.UserObserver</className>
+        <methodName>calculateAverageCarsSpeed</methodName>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
   </methodDataSources>

@@ -1,0 +1,10 @@
+"run","default_observer_minPycor","isTrafficLights","default_observer_minPxcor","percentageOfCarsWithLessAcceleration","maxCarNumber","randomSeed","roadLength","default_observer_maxPycor","default_observer_maxPxcor","maxCarSpeed","maxCarAcceleration","trafficLightsChangeDuration"
+1,-20,"true",-20,0,70,1707143634,10,20,20,2.0,1.0,2
+3,-20,"true",-20,0,70,1707148369,10,20,20,2.0,1.0,4
+5,-20,"true",-20,0,70,1707150915,10,20,20,2.0,1.0,6
+7,-20,"true",-20,0,70,1707153322,10,20,20,2.0,1.0,8
+9,-20,"true",-20,0,70,1707155681,10,20,20,2.0,1.0,10
+2,-20,"true",-20,0,70,1707144103,10,20,20,2.0,1.0,3
+4,-20,"true",-20,0,70,1707148822,10,20,20,2.0,1.0,5
+6,-20,"true",-20,0,70,1707151384,10,20,20,2.0,1.0,7
+8,-20,"true",-20,0,70,1707153650,10,20,20,2.0,1.0,9
