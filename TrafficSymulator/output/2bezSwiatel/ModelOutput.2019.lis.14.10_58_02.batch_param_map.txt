@@ -1,0 +1,2 @@
+"run","default_observer_minPycor","isTrafficLights","default_observer_minPxcor","percentageOfCarsWithLessAcceleration","maxCarNumber","randomSeed","roadLength","default_observer_maxPycor","default_observer_maxPxcor","maxCarSpeed","maxCarAcceleration","trafficLightsChangeDuration"
+1,-19,"false",-19,0,70,1767409205,10,20,20,1.0,1.0,10

@@ -481,3 +481,79 @@ INFO  [SwingWorker-pool-1-thread-4] 2019-11-14 10:58:02,355 repast.simphony.batc
 INFO  [SwingWorker-pool-1-thread-4] 2019-11-14 10:58:02,355 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/Kasia/Desktop/SZ_ForestInFire/TrafficSymulator/output
 INFO  [SwingWorker-pool-1-thread-4] 2019-11-14 10:58:02,372 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0003
 INFO  [SwingWorker-pool-1-thread-4] 2019-11-14 10:58:02,372 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 1,0621
+INFO  [AWT-EventQueue-0] 2019-11-14 11:24:41,988 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-14 11:24:41,994 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\batch\batch_params.xml to
+	C:\Users\Kasia\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-1-thread-5] 2019-11-14 11:24:53,157 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\Kasia\AppData\Local\Temp\Kasia_localhost5022533645791370987.zip to 
+C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727090094 ...
+INFO  [SwingWorker-pool-1-thread-5] 2019-11-14 11:24:53,218 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-1-thread-5] 2019-11-14 11:24:53,218 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0521
+INFO  [SwingWorker-pool-1-thread-5] 2019-11-14 11:24:53,218 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727090094\Kasia_localhost5022533645791370987.zip
+INFO  [SwingWorker-pool-1-thread-5] 2019-11-14 11:24:53,810 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-16-thread-1] 2019-11-14 11:25:53,815 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727090094 for DONE:  no
+INFO  [pool-16-thread-1] 2019-11-14 11:26:53,815 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727090094 for DONE:  yes
+INFO  [SwingWorker-pool-1-thread-5] 2019-11-14 11:26:53,817 repast.simphony.batch.ssh.SessionsDriver - Run Time: 2,0099
+INFO  [SwingWorker-pool-1-thread-5] 2019-11-14 11:26:53,822 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727090094
+INFO  [SwingWorker-pool-1-thread-5] 2019-11-14 11:26:53,822 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/Kasia/Desktop/SZ_ForestInFire/TrafficSymulator/output
+INFO  [SwingWorker-pool-1-thread-5] 2019-11-14 11:26:53,838 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0003
+INFO  [SwingWorker-pool-1-thread-5] 2019-11-14 11:26:53,838 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 2,0624
+INFO  [AWT-EventQueue-0] 2019-11-14 11:27:57,493 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-14 11:27:57,503 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\batch\batch_params.xml to
+	C:\Users\Kasia\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-1-thread-6] 2019-11-14 11:28:09,434 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\Kasia\AppData\Local\Temp\Kasia_localhost2715583951040321289.zip to 
+C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727286445 ...
+INFO  [SwingWorker-pool-1-thread-6] 2019-11-14 11:28:09,487 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-1-thread-6] 2019-11-14 11:28:09,487 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0507
+INFO  [SwingWorker-pool-1-thread-6] 2019-11-14 11:28:09,487 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727286445\Kasia_localhost2715583951040321289.zip
+INFO  [SwingWorker-pool-1-thread-6] 2019-11-14 11:28:10,036 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-17-thread-1] 2019-11-14 11:29:10,045 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727286445 for DONE:  no
+INFO  [pool-17-thread-1] 2019-11-14 11:30:10,062 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727286445 for DONE:  no
+INFO  [pool-17-thread-1] 2019-11-14 11:31:10,071 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727286445 for DONE:  no
+INFO  [pool-17-thread-1] 2019-11-14 11:32:10,081 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727286445 for DONE:  yes
+INFO  [SwingWorker-pool-1-thread-6] 2019-11-14 11:32:10,084 repast.simphony.batch.ssh.SessionsDriver - Run Time: 4,0100
+INFO  [SwingWorker-pool-1-thread-6] 2019-11-14 11:32:10,085 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727286445
+INFO  [SwingWorker-pool-1-thread-6] 2019-11-14 11:32:10,100 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/Kasia/Desktop/SZ_ForestInFire/TrafficSymulator/output
+INFO  [SwingWorker-pool-1-thread-6] 2019-11-14 11:32:10,116 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0005
+INFO  [SwingWorker-pool-1-thread-6] 2019-11-14 11:32:10,116 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 4,0615
+INFO  [AWT-EventQueue-0] 2019-11-14 11:36:19,134 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-14 11:36:19,223 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\batch\batch_params.xml to
+	C:\Users\Kasia\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-14 11:36:31,444 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\Kasia\AppData\Local\Temp\Kasia_localhost3649200583598787159.zip to 
+C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727788076 ...
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-14 11:36:31,508 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-14 11:36:31,509 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0572
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-14 11:36:31,510 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727788076\Kasia_localhost3649200583598787159.zip
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-14 11:36:32,083 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-2-thread-1] 2019-11-14 11:37:32,088 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727788076 for DONE:  no
+INFO  [pool-2-thread-1] 2019-11-14 11:38:32,088 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727788076 for DONE:  no
+INFO  [pool-2-thread-1] 2019-11-14 11:39:32,089 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727788076 for DONE:  no
+INFO  [pool-2-thread-1] 2019-11-14 11:40:32,089 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727788076 for DONE:  yes
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-14 11:40:32,090 repast.simphony.batch.ssh.SessionsDriver - Run Time: 4,0097
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-14 11:40:32,120 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573727788076
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-14 11:40:32,149 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/Kasia/Desktop/SZ_ForestInFire/TrafficSymulator/output
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-14 11:40:32,160 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0012
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-14 11:40:32,160 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 4,0683
+INFO  [AWT-EventQueue-0] 2019-11-14 11:42:14,091 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-14 11:42:14,103 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Kasia\Desktop\SZ_ForestInFire\TrafficSymulator\batch\batch_params.xml to
+	C:\Users\Kasia\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-14 11:42:26,477 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\Kasia\AppData\Local\Temp\Kasia_localhost520957835699738543.zip to 
+C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573728143421 ...
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-14 11:42:26,538 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-14 11:42:26,538 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0520
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-14 11:42:26,539 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573728143421\Kasia_localhost520957835699738543.zip
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-14 11:42:27,121 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [pool-3-thread-1] 2019-11-14 11:43:27,123 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573728143421 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-14 11:44:27,123 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573728143421 for DONE:  yes
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-14 11:44:27,125 repast.simphony.batch.ssh.SessionsDriver - Run Time: 2,0097
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-14 11:44:27,136 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\Kasia\AppData\Local\Temp\simphony_model_1573728143421
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-14 11:44:27,145 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/Kasia/Desktop/SZ_ForestInFire/TrafficSymulator/output
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-14 11:44:27,165 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0006
+INFO  [SwingWorker-pool-1-thread-2] 2019-11-14 11:44:27,165 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 2,0625

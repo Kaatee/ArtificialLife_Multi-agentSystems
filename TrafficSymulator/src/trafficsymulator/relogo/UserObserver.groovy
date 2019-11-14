@@ -61,8 +61,8 @@ class UserObserver extends ReLogoObserver{
 							createUserTurtles(1){
 								setColor(black());
 								setxy(x, y)
-								setA(randomA);
-								//setA(0.5);
+								//setA(randomA);
+								setA(0.6);
 							}
 						}
 						else {
